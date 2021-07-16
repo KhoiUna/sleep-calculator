@@ -1,7 +1,7 @@
 import "./App.css";
 import Results from "./components/Results";
 import { useState } from "react";
-import calcSleepTime from "./helpers/calcSleepTime";
+import calcSleepTimes from "./helpers/calcSleepTimes";
 
 function App() {
   const [results, setResults] = useState([]);
@@ -24,7 +24,7 @@ function App() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const sleepingTimes = calcSleepTime(wakingTime);
+    const sleepingTimes = calcSleepTimes(wakingTime);
     setResults(sleepingTimes);
   };
 
@@ -35,7 +35,7 @@ function App() {
       </header>
 
       <main>
-        <h2>SET YOUR WAKE UP TIME:</h2>
+        <h2 className="title">SET YOUR WAKE UP TIME:</h2>
 
         <div id="form-container">
           <form onSubmit={handleSubmit} onChange={handleChange}>
