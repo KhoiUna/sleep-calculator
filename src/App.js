@@ -7,8 +7,8 @@ function App() {
   const [results, setResults] = useState([]);
 
   const [wakingTime, setWakingTime] = useState({
-    hour: 0,
-    minute: 0,
+    hour: "",
+    minute: "",
     time: "AM",
   });
 
