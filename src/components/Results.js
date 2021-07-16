@@ -3,7 +3,7 @@ import "./Results.css";
 export default function Results({ results }) {
   return (
     <>
-      <h2>TRY TO SLEEP AT THESE TIMES:</h2>
+      <h2 className="title">TRY TO SLEEP AT THESE TIMES:</h2>
 
       <ul id="sleep-times">
         {results.map((time, index) => (
@@ -13,7 +13,9 @@ export default function Results({ results }) {
         ))}
       </ul>
 
-      <h3 id="greet">~ Have a good night! ~</h3>
+      <h3 className="title" id="greet">
+        ~ Have a good night! ~
+      </h3>
     </>
   );
 }
