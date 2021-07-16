@@ -13,6 +13,14 @@ export default function Results({ results }) {
         ))}
       </ul>
 
+      <h3 className="title" id="note">
+        * <span style={{ textDecoration: "2px underline" }}>Note:</span> Please
+        keep in mind that you should be falling asleep at these times.
+        <br />
+        The average human takes fourteen minutes to fall asleep, so plan
+        accordingly!
+      </h3>
+
       <h3 className="title" id="greet">
         ~ Have a good night ! ~
       </h3>

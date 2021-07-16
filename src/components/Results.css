@@ -7,6 +7,10 @@
   margin: 1rem;
 }
 
+#note {
+  margin-top: 2rem;
+}
+
 #greet {
   text-align: center;
   margin: 4rem;
