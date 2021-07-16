@@ -15,6 +15,13 @@ self.addEventListener("message", (event) => {
 });
 
 workbox.routing.registerRoute(
+  new RegExp("/*"),
+  new workbox.strategies.StaleWhileRevalidate({
+    cacheName: CACHE,
+  })
+);
+
+workbox.routing.registerRoute(
   ({ event }) => event.request.destination === "document",
   new workbox.strategies.NetworkFirst({
     cacheName: HTML_CACHE,
