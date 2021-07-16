@@ -3,6 +3,7 @@
   "name": "Sleep Calculator",
   "description": "Calculate your bed time",
   "categories": ["health", "sleep", "productivity"],
+  "orientation": "portrait-primary",
   "icons": [
     {
       "src": "favicon.ico",
