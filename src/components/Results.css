@@ -1,0 +1,13 @@
+#sleep-times {
+  margin: 1.5rem 0 0 1.5rem;
+}
+
+#sleep-times p {
+  font-size: larger;
+  margin: 1rem;
+}
+
+#greet {
+  text-align: center;
+  margin: 4rem;
+}
