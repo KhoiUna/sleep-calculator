@@ -33,7 +33,9 @@
     }
   ],
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "theme_color": "#E7625F",
-  "background_color": "#E9EAE0"
+  "background_color": "#E9EAE0",
+  "screenshots": []
 }
