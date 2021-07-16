@@ -15,11 +15,17 @@ const formatAndShowSleepingTimes = (minutes) => {
   let hours = Math.floor(minutes / 60);
   let minute = minutes - hours * 60;
 
-  let time = "AM";
-  if (hours < 0) time = "PM";
-  if (hours <= 0) hours += 12;
-  if (hours > 12) hours -= 12;
   if (minute < 10) minute = `0${minute}`;
+
+  if (hours < 0) return `${hours + 12}:${minute} PM`;
+
+  let time = "";
+  if (hours >= 0) time = "AM";
+  if (hours >= 12) {
+    hours -= 12;
+    time = "PM";
+  }
+  if (hours === 0) hours += 12;
 
   return `${hours}:${minute} ${time}`;
 };
