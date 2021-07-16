@@ -1,7 +1,3 @@
-importScripts(
-  "https://storage.googleapis.com/workbox-cdn/releases/5.1.2/workbox-sw.js"
-);
-
 const CACHE = "pwabuilder-offline";
 const HTML_CACHE = "html";
 const JS_CACHE = "javascript";
