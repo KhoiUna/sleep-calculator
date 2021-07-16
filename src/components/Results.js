@@ -14,7 +14,7 @@ export default function Results({ results }) {
       </ul>
 
       <h3 className="title" id="greet">
-        ~ Have a good night! ~
+        ~ Have a good night ! ~
       </h3>
     </>
   );
